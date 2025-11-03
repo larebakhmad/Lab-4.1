@@ -87,11 +87,17 @@ Questions to answer in phase1_notes.txt:
 
 Did requests and curl report the same status and server header?
     Yes. curl returned "HTTP/1.1 200 OK" and the Python requests run showed Status: 200.
-Both reported the same Server header: "Apache/2.4.7 (Ubuntu)".
-The requests final URL is "http://scanme.nmap.org/" (normalized with a trailing slash); curl -I showed no Location header (no redirect).
+    Both reported the same Server header: "Apache/2.4.7 (Ubuntu)".
+    The requests final URL is "http://scanme.nmap.org/" (normalized with a trailing slash); curl -I showed no Location header (no redirect).
+
 If different, what header or other factor might explain it (redirects, default headers, user agent)?
-    Redirect behavior: requests.get() follows redirects by default; curl -I does not unless you add -L. A 3xx + Location would make requests show the final (post-redirect) status while curl -I would show the initial 3xx.
-Client-specific behavior: servers can vary responses based on headers (User-Agent, Accept, Accept-Encoding, cookies). For example, different User-Agent strings can trigger different server logic or different backends.
-Content negotiation / Vary header: the server may return different headers/body depending on Accept or Accept-Language.
-Protocol differences: HTTP vs HTTPS (or HTTP/1.1 vs HTTP/2) can yield different responses or headers.
-Load-balancer / CDN routing: different clients might hit different backend nodes with slightly different Server headers.
+    Redirects / Location: Some responses are 3xx with a Location header.
+    The python requests library follows redirects by default; curl -I doest not
+    unless you use -L. So requests will show the final resource (200), while curl -l shows the
+    intermediate 3xx.
+    User-Agent (UA): Servers often return different content for browsers vs bots (or mobile vs desktop)
+    based on UA. They might hide features or show challenge pages for unknown UAs.
+
+Step 5 - Short synthesis:
+
+ 
