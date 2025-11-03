@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Go ahead and ScanMe!</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2A0D45">
+<link rel="preload" as="image" href="/images/sitelogo.png" imagesizes="168px" imagesrcset="/images/sitelogo.png, /images/sitelogo-2x.png 2x">
+<link rel="preload" as="image" href="/shared/images/nst-icons.svg">
+<link rel="stylesheet" href="/shared/css/nst.css?v=2">
+<script async src="/shared/js/nst.js?v=2"></script>
