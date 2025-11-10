@@ -100,4 +100,10 @@ If different, what header or other factor might explain it (redirects, default h
 
 Step 5 - Short synthesis:
 
- 
+Open phase1_notes.txt and append a 4–6 line summary answering:
+
+What three pieces of information from the steps above would be most useful in a reconnaissance report, and why?
+
+One quick defensive suggestion an admin could use to reduce information leakage from headers.
+
+End of Phase 1. Save all files into your lab folder — these will be referenced in later labs.

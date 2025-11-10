@@ -1,0 +1,16 @@
+Task 2.1
+Run from the terminal commandline python3 lab4-1_get.py http://scanme.nmap.org
+- python3 lab4-1_get.py http://scanme.nmap.org
+
+Run against each lab URL. Observe status codes (200 / 301 / 404 / 500). [http://scanme.nmap.org, http://example.com, http://httpbin.org]
+- python3 lab4-1_get.py http://scanme.nmap.org
+- python3 lab4-1_get.py http://example.com
+- python3 lab4-1_get.py http://httpbin.org
+
+
+Try http and https version of each domain, and not any differences
+- python3 lab4-1_get.py http://example.com
+- python3 lab4-1_get.py https://example.com
+
+Try non-existent paths (/thispagedoesnotexist) and note the behavior.
+Inspect Server header values and discuss what they might reveal.
