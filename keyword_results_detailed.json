@@ -1,0 +1,37 @@
+{
+  "/workspaces/Lab-4.1/scanme.html": {
+    "type": "local_file",
+    "content_length": 6974,
+    "text_length": 1224,
+    "keyword_counts": {
+      "admin": 0,
+      "login": 0,
+      "debug": 0,
+      "error": 0
+    }
+  },
+  "http://scanme.nmap.org": {
+    "type": "remote_site",
+    "status": 200,
+    "content_length": 6974,
+    "text_length": 1224,
+    "keyword_counts": {
+      "admin": 0,
+      "login": 0,
+      "debug": 0,
+      "error": 0
+    }
+  },
+  "http://example.com": {
+    "type": "remote_site",
+    "status": 200,
+    "content_length": 513,
+    "text_length": 144,
+    "keyword_counts": {
+      "admin": 0,
+      "login": 0,
+      "debug": 0,
+      "error": 0
+    }
+  }
+}

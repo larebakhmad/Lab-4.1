@@ -1,0 +1,246 @@
+{
+  "https://www.cloudflare.com": {
+    "baseline": {
+      "variation": "baseline",
+      "status": 200,
+      "content_length": 968212,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+      },
+      "response_headers": {
+        "CF-Ray": "9a030776db03949d-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    },
+    "x_forwarded_for": {
+      "variation": "x_forwarded_for",
+      "status": 200,
+      "content_length": 968177,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "1.2.3.4"
+      },
+      "response_headers": {
+        "CF-Ray": "9a03077ade53942d-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    },
+    "suspicious_referer": {
+      "variation": "suspicious_referer",
+      "status": 200,
+      "content_length": 968208,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "Referer": "http://evil.example/"
+      },
+      "response_headers": {
+        "CF-Ray": "9a0307850c199627-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    },
+    "sqlmap_signature": {
+      "variation": "sqlmap_signature",
+      "status": 200,
+      "content_length": 968170,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "1.2.3.4",
+        "Referer": "http://evil.example/",
+        "Accept-Language": "fr-FR"
+      },
+      "response_headers": {
+        "CF-Ray": "9a0307880d9a9589-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    },
+    "proxy_headers": {
+      "variation": "proxy_headers",
+      "status": 200,
+      "content_length": 968167,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "192.168.1.1",
+        "X-Real-IP": "10.0.0.1",
+        "X-Forwarded-Proto": "https",
+        "X-Forwarded-Host": "internal.example.com"
+      },
+      "response_headers": {
+        "CF-Ray": "9a03078c3da9ef29-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    },
+    "scanner_markers": {
+      "variation": "scanner_markers",
+      "status": 200,
+      "content_length": 968190,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Scanner": "nmap",
+        "X-Scan-Memo": "port scan",
+        "X-Originating-IP": "[192.168.0.1]"
+      },
+      "response_headers": {
+        "CF-Ray": "9a03078f0af976c9-LHR",
+        "CF-Cache-Status": "---",
+        "Server": "cloudflare",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": true
+    }
+  },
+  "https://www.amazon.com": {
+    "baseline": {
+      "variation": "baseline",
+      "status": 200,
+      "content_length": 5070,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "---",
+        "X-Content-Type-Options": "---",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": false,
+      "has_blocked": false
+    },
+    "x_forwarded_for": {
+      "variation": "x_forwarded_for",
+      "status": 200,
+      "content_length": 5070,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "1.2.3.4"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "---",
+        "X-Content-Type-Options": "---",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": false,
+      "has_blocked": false
+    },
+    "suspicious_referer": {
+      "variation": "suspicious_referer",
+      "status": 200,
+      "content_length": 748459,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "Referer": "http://evil.example/"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": false
+    },
+    "sqlmap_signature": {
+      "variation": "sqlmap_signature",
+      "status": 200,
+      "content_length": 211346,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "1.2.3.4",
+        "Referer": "http://evil.example/",
+        "Accept-Language": "fr-FR"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "---",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": true,
+      "has_blocked": false
+    },
+    "proxy_headers": {
+      "variation": "proxy_headers",
+      "status": 200,
+      "content_length": 5070,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Forwarded-For": "192.168.1.1",
+        "X-Real-IP": "10.0.0.1",
+        "X-Forwarded-Proto": "https",
+        "X-Forwarded-Host": "internal.example.com"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "---",
+        "X-Content-Type-Options": "---",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": false,
+      "has_blocked": false
+    },
+    "scanner_markers": {
+      "variation": "scanner_markers",
+      "status": 200,
+      "content_length": 5070,
+      "headers_sent": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "X-Scanner": "nmap",
+        "X-Scan-Memo": "port scan",
+        "X-Originating-IP": "[192.168.0.1]"
+      },
+      "response_headers": {
+        "CF-Ray": "---",
+        "CF-Cache-Status": "---",
+        "Server": "Server",
+        "X-Frame-Options": "---",
+        "X-Content-Type-Options": "---",
+        "Strict-Transport-Security": "max-age=47474747; includeSubDo"
+      },
+      "has_challenge": false,
+      "has_blocked": false
+    }
+  }
+}

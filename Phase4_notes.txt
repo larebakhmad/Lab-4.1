@@ -1,0 +1,41 @@
+Task 4.1 - User-Agent variation
+Create lab4-1_header_probe.py
+
+Run the probe and observe differences in status, server, and length.
+- cd /workspaces/Lab-4.1 && python lab4-1_header_probe.py 
+- http://scanme.nmap.org probe_scanme.csv && echo -e "\n=== 
+- SCANME.NMAP.ORG RESULTS ===" && cat probe_scanme.csv
+
+- cd /workspaces/Lab-4.1 && python lab4-1_header_probe.py
+- http://example.com probe_example.csv
+
+- cd /workspaces/Lab-4.1 && python lab4-1_header_probe.py
+- http://info.cern.ch probe_cern.csv
+
+- cd /workspaces/Lab-4.1 && python -m pip install tabulate -q
+- && python header_probe_comparison.py
+
+Does the server respond differently to curl, sqlmap, or Nikto user agents?
+- cd /workspaces/Lab-4.1 && python user_agent_analysis.py
+- cd /workspaces/Lab-4.1 && python keyword_compare_local.py
+
+- cd /workspaces/Lab-4.1 && timeout 30 python waf_detection.py 2>&1 | head -150
+
+
+- NO, The servers respond indentically to curl, sqlmap, and Nikto user agents across
+- all tested sites.
+
+- Google-Basic filering: Mozilla Browser: 270KB response
+- cur/sqlmap/Nikto: Much smaller (17-18KB) responses with access denied warnings.
+
+- Amazon-Detets curl specificially: Mozilla: 200 OK (5070 bytes)
+- curl: 503 Service Unavailable ← Blockes!
+- sqlmap: 200OK (5070 bytes)
+- sqlmap: 200OK (5070 bytes)
+
+Task 4.2 - Additional header tests
+Log any changs in response status, body, or headers.
+- cd /workspaces/Lab-4.1 && python header_fuzzing.py
+- cd /workspaces/Lab-4.1 && timeout 60 python header_fuzzing.py 2>&1
+- cd /workspaces/Lab-4.1 && timeout 60 python advanced_header_fuzzing.py 2>&1
+- cd /workspaces/Lab-4.1 && python waf_findings_report.py

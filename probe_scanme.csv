@@ -1,0 +1,6 @@
+ua,status,server,length,error
+Mozilla/5.0 (Windows NT 10.0; Win64; x64),200,Apache/2.4.7 (Ubuntu),6974,
+curl/7.68.0,200,Apache/2.4.7 (Ubuntu),6974,
+sqlmap/1.5.4,200,Apache/2.4.7 (Ubuntu),6974,
+Nikto/2.1.6,200,Apache/2.4.7 (Ubuntu),6974,
+python-requests/2.x,200,Apache/2.4.7 (Ubuntu),6974,

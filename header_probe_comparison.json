@@ -1,0 +1,150 @@
+{
+  "http://example.com": [
+    {
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "status": 200,
+      "server": "",
+      "length": 513,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "curl/7.68.0",
+      "status": 200,
+      "server": "",
+      "length": 513,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "sqlmap/1.5.4",
+      "status": 200,
+      "server": "",
+      "length": 513,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "Nikto/2.1.6",
+      "status": 200,
+      "server": "",
+      "length": 513,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "python-requests/2.x",
+      "status": 200,
+      "server": "",
+      "length": 513,
+      "content_type": "text/html"
+    }
+  ],
+  "http://info.cern.ch": [
+    {
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "status": 200,
+      "server": "Apache",
+      "length": 646,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "curl/7.68.0",
+      "status": 200,
+      "server": "Apache",
+      "length": 646,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "sqlmap/1.5.4",
+      "status": 200,
+      "server": "Apache",
+      "length": 646,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "Nikto/2.1.6",
+      "status": 200,
+      "server": "Apache",
+      "length": 646,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "python-requests/2.x",
+      "status": 200,
+      "server": "Apache",
+      "length": 646,
+      "content_type": "text/html"
+    }
+  ],
+  "http://scanme.nmap.org": [
+    {
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "status": 200,
+      "server": "Apache/2.4.7 (Ubuntu)",
+      "length": 6974,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "curl/7.68.0",
+      "status": 200,
+      "server": "Apache/2.4.7 (Ubuntu)",
+      "length": 6974,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "sqlmap/1.5.4",
+      "status": 200,
+      "server": "Apache/2.4.7 (Ubuntu)",
+      "length": 6974,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "Nikto/2.1.6",
+      "status": 200,
+      "server": "Apache/2.4.7 (Ubuntu)",
+      "length": 6974,
+      "content_type": "text/html"
+    },
+    {
+      "ua": "python-requests/2.x",
+      "status": 200,
+      "server": "Apache/2.4.7 (Ubuntu)",
+      "length": 6974,
+      "content_type": "text/html"
+    }
+  ],
+  "http://httpbin.org/status/200": [
+    {
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "status": 200,
+      "server": "gunicorn/19.9.0",
+      "length": 0,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "ua": "curl/7.68.0",
+      "status": 200,
+      "server": "gunicorn/19.9.0",
+      "length": 0,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "ua": "sqlmap/1.5.4",
+      "status": 200,
+      "server": "gunicorn/19.9.0",
+      "length": 0,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "ua": "Nikto/2.1.6",
+      "status": 200,
+      "server": "gunicorn/19.9.0",
+      "length": 0,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "ua": "python-requests/2.x",
+      "status": 200,
+      "server": "gunicorn/19.9.0",
+      "length": 0,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ]
+}

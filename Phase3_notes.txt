@@ -1,0 +1,47 @@
+Task 3.1
+Run it against each target (and some of your own) and save page_meta.json files.
+-ls -la --show-control-chars /workspaces/lab4.1 | sed -n '1,200p'
+-sed -n '1,240p' /workspaces/lab4.1/Lab4-1_parse.py*
+-sed -n '1,240p' /workspaces/lab4.1/lab4.py*
+-python3 collect_page_meta.py
+Inspect forms: are there login forms? hidden fields? suspicious parameters?
+-What is "suspicious" or actionable
+-Presence of password, passwd, or inputs of type password would indicate a login
+-form and possible targets for credential harvesting or brute force. None of the homepages
+-we scraped exposed a password input (login forms usually are on dedicated sign-in pages).
+
+Per-site findings (forms, hidden fields, suspicious params, title/meta)
+scanme.nmap.org
+
+Title: "Go ahead and ScanMe!"
+Meta description: none
+Forms: search forms (GET, input name q, type search).
+Login forms: none.
+Hidden fields: none.
+Notes: Minimal surface, no sensitive inputs.
+example.com
+
+Title: "Example Domain"
+Meta description: none
+Forms: none.
+Notes: Static example site; nothing actionable.
+httpbin.org
+
+Title: "httpbin.org"
+Meta description: none
+Forms: none.
+Notes: API testing site; no site forms on homepage.
+Note title and meta descriptions — are they meaningful?
+-Meaningful and present: github.com, cloudflare.com, aws.amazon.com —
+titles and meta descriptions are descriptive and appropriate for SEO/UX.
+Minimal or absent: example.com, httpbin.org, scanme.nmap.org — these either
+intentionally omit descriptions (example or test sites) or are minimal.
+Block pages: Microsoft returned a blocked-title that indicates server/edge
+controls are triggered — this is actionable for reconnaissance (detects bot blocking / WAF).
+
+Task 3.2
+Run and compare counts across different sites.
+- cd /workspaces/Lab-4.1 && python keywork_compare.py
+- cd /workspaces/Lab-4.1 && python keyword_compare_local.py
+- text = soup.get_text(separator=" ").lower()
+- kw_counts = {k: text.count(k) for k in keywords}

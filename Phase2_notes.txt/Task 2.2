@@ -1,0 +1,26 @@
+Run for all lab targets (add a few of your own also) and view headers.json.
+- python3 lab4-1_get.py https://www.microsoft.com
+-python3 lab4-1_get.py https://github.com
+-python3 lab4-1_get.py https://cloudflare.com
+-python3 headers.json http://scanme.nmap.org
+-https://scanme.nmap.org http://example.com
+-https://example.com http://httpbin.org https://httpbin.org
+-https://www.microsoft.com https://github.com https://cloudflare.com
+-https://aws.amazon.com
+Discuss variations and what is actionable information.
+Server Technology Information:
+    MOST REVEALING: scanme.nmap.org (Apache/2.4.7 on Ubuntu)
+
+    Actionable: This specific version can be cross-referenced with CVE databases
+    Known vulnerabilities for this version could be exploited
+    PARTIALLY REVEALING: httpbin.org (gunicorn/19.9.0)
+
+    Actionable: Version information of the WSGI server exposed
+    Could target Gunicorn-specific vulnerabilities
+MINIMAL DISCLOSURE:
+
+github.com: Shows only "github.com"
+cloudflare.com: Shows only "cloudflare"
+microsoft.com: Shows "AkamaiNetStorage"
+example.com: No server information (null)
+aws.amazon.com: Generic "Server"
